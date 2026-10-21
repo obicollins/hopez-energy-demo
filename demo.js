@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-demo-form]').forEach(form => form.addEventListener('submit', event => { event.preventDefault(); const note = document.createElement('p'); note.setAttribute('role', 'status'); note.textContent = 'This is a portfolio preview. Form delivery is disabled.'; form.querySelector('[role="status"]')?.remove(); form.append(note); }));
